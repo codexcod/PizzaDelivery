@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzeriaOsvaldo
 {
-    public partial class PedidosPendiente : Form
+    public partial class frmJefe : Form
     {
-        public PedidosPendiente()
+        public frmJefe()
         {
             InitializeComponent();
         }
 
-        private void btnSalirPedidosPen_Click(object sender, EventArgs e)
+        private void btnSalirJefe_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Seguro que queres salir?", "consulta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
@@ -26,6 +26,9 @@ namespace PizzeriaOsvaldo
             }
         }
 
-
+        private void btnBalance_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

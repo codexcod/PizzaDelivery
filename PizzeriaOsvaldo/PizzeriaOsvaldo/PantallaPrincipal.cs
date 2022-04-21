@@ -22,6 +22,24 @@ namespace PizzeriaOsvaldo
 
         }
 
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            frmPedidos pedidos = new frmPedidos();
+            pedidos.Show(); 
+        }
+
+        private void btnJefe_Click(object sender, EventArgs e)
+        {
+            frmJefe jefe = new frmJefe();
+            jefe.Show();
+        }
+
+        private void btnGerente_Click(object sender, EventArgs e)
+        {
+            frmGerente gerente = new frmGerente();
+            gerente.Show();
+        }
+
                 
     }
 }

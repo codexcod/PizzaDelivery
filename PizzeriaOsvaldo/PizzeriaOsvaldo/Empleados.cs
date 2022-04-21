@@ -10,28 +10,11 @@ using System.Windows.Forms;
 
 namespace PizzeriaOsvaldo
 {
-    public partial class frmPedidos : Form
+    public partial class frmEmpleados : Form
     {
-        public frmPedidos()
+        public frmEmpleados()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPedidosPendientes_Click(object sender, EventArgs e)
-        {
-            PedidosPendiente pendientes = new PedidosPendiente();
-            pendientes.Show(); 
-        }
-
-        private void btnVerPedido_Click(object sender, EventArgs e)
-        {
-            PedidoEnDetalle detalle = new PedidoEnDetalle();
-            detalle.Show(); // or form.ShowDialog(this);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

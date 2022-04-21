@@ -64,6 +64,7 @@
             this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnPedidosPendientes
             // 
@@ -73,6 +74,7 @@
             this.btnPedidosPendientes.TabIndex = 3;
             this.btnPedidosPendientes.Text = "Pedidos Pendientes";
             this.btnPedidosPendientes.UseVisualStyleBackColor = true;
+            this.btnPedidosPendientes.Click += new System.EventHandler(this.btnPedidosPendientes_Click);
             // 
             // btnVerPedido
             // 
@@ -82,6 +84,7 @@
             this.btnVerPedido.TabIndex = 4;
             this.btnVerPedido.Text = "Ver Pedido";
             this.btnVerPedido.UseVisualStyleBackColor = true;
+            this.btnVerPedido.Click += new System.EventHandler(this.btnVerPedido_Click);
             // 
             // frmPedidos
             // 

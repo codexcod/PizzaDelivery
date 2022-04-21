@@ -52,6 +52,7 @@
             this.btnSalirPedidosPen.TabIndex = 8;
             this.btnSalirPedidosPen.Text = "Salir";
             this.btnSalirPedidosPen.UseVisualStyleBackColor = true;
+            this.btnSalirPedidosPen.Click += new System.EventHandler(this.btnSalirPedidosPen_Click);
             // 
             // dataGridView1
             // 

@@ -42,6 +42,7 @@
             this.btnPedidos.TabIndex = 0;
             this.btnPedidos.Text = "VER PEDIDOS\r\n";
             this.btnPedidos.UseVisualStyleBackColor = true;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // btnJefe
             // 
@@ -51,6 +52,7 @@
             this.btnJefe.TabIndex = 1;
             this.btnJefe.Text = "JEFE";
             this.btnJefe.UseVisualStyleBackColor = true;
+            this.btnJefe.Click += new System.EventHandler(this.btnJefe_Click);
             // 
             // btnGerente
             // 
@@ -60,6 +62,7 @@
             this.btnGerente.TabIndex = 2;
             this.btnGerente.Text = "GERENTE";
             this.btnGerente.UseVisualStyleBackColor = true;
+            this.btnGerente.Click += new System.EventHandler(this.btnGerente_Click);
             // 
             // lbTitulo
             // 
