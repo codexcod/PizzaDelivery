@@ -10,32 +10,20 @@ using System.Windows.Forms;
 
 namespace PizzeriaOsvaldo
 {
-    public partial class frmJefe : Form
+    public partial class Stock : Form
     {
-        public frmJefe()
+        public Stock()
         {
             InitializeComponent();
         }
 
-        private void btnSalirJefe_Click(object sender, EventArgs e)
+        private void btnSalirStock_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Seguro que queres salir?", "consulta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 Close();
             }
-        }
-
-        private void btnBalance_Click(object sender, EventArgs e)
-        {
-            Balance balance = new Balance();
-            balance.Show();
-        }
-
-        private void btnStock_Click(object sender, EventArgs e)
-        {
-            Stock stock = new Stock();
-            stock.Show();
         }
     }
 }

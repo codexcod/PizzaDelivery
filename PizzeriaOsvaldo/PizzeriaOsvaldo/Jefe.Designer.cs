@@ -46,7 +46,7 @@
             // 
             // btnBalance
             // 
-            this.btnBalance.Location = new System.Drawing.Point(113, 140);
+            this.btnBalance.Location = new System.Drawing.Point(103, 140);
             this.btnBalance.Name = "btnBalance";
             this.btnBalance.Size = new System.Drawing.Size(258, 120);
             this.btnBalance.TabIndex = 10;
@@ -56,12 +56,13 @@
             // 
             // btnStock
             // 
-            this.btnStock.Location = new System.Drawing.Point(420, 140);
+            this.btnStock.Location = new System.Drawing.Point(414, 140);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(258, 120);
             this.btnStock.TabIndex = 11;
             this.btnStock.Text = "Stock";
             this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // lbTituloPedidosPen
             // 
