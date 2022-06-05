@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PizzeriaOsvaldo.Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,27 @@ namespace PizzeriaOsvaldo
             {
                 Close();
             }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            CreateEmpleado createEmpleado = new CreateEmpleado();
+            createEmpleado.Show(); // or form.ShowDialog(this);
+        }
+
+        private void frmEmpleados_Load(object sender, EventArgs e)
+        {
+            using (PizzaDbEntities db = new PizzaDbEntities())
+            {
+                dataEmpleados.AutoGenerateColumns = false;
+                var lstEmpleados = db.Empleado.ToList();
+                dataEmpleados.DataSource = lstEmpleados;
+            }
+        }
+
+        private void dataEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
